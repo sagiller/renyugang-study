@@ -27,16 +27,14 @@ deploy:
     branch: master
     tags: true
 after_deploy:
-- fir p app-release.apk -T bbd344180a414bd4fad5ecb72f5fd468
+- fir p app-release.apk -T $FIRIM_API_TOKEN
   -c "`git cat-file tag $TRAVIS_TAG`"
-- curl -d "appid=11503&to=sagiller@163.com&subject=[自动通知] 安卓新版本$TRAVIS_TAG发布&project=4JiOa3&signature=f14365a912bd02a07c161261f181f3a5&vars={\"TRAVIS_REPO_SLUG\":\"$TRAVIS_REPO_SLUG\",\"TRAVIS_TAG\":\"$TRAVIS_TAG\",\"TAG_DESCRIPTION\":\"$(git
+- curl -d "appid=11503&to=sagiller@163.com&subject=[自动通知] 安卓新版本$TRAVIS_TAG发布&project=4JiOa3&signature=$SUBMAIL_SIGNATURE&vars={\"TRAVIS_REPO_SLUG\":\"$TRAVIS_REPO_SLUG\",\"TRAVIS_TAG\":\"$TRAVIS_TAG\",\"TAG_DESCRIPTION\":\"$(git
   cat-file tag $TRAVIS_TAG | awk 1 ORS='<br>')\"}" https://api.submail.cn/mail/xsend.json
 notifications:
   email:
     recipients:
     - sagiller@163.com
-    - sagiller@126.com
-    - sagillersg@gmail.com
     on_success: always
     on_failure: always
 git:
