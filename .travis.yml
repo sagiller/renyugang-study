@@ -36,6 +36,7 @@ notifications:
     recipients:
     - sagiller@163.com
     - sagiller@126.com
+    - sagillersg@gmail.com
     on_success: always
     on_failure: always
 git:

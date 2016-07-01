@@ -38,3 +38,4 @@ captures/
 /captures
 *.iml
 .gradle
+app/build
