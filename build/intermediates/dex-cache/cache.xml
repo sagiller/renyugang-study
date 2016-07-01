@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/Users/sagiller/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/library-2.4.0_cd9978bdb89404d7dda304ef24c89f59b3f88925.jar" />
-    </item>
-    <item
-        jar="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jar="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.3.0_a95e87a91afd45312771a8923d70772a9ce61556.jar" />
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.3.0_d9f5ef90a452194e0fe949bf37ff9a820ae8777c.jar" />
     </item>
     <item
-        jar="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jar="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_d547618c84b5901f88aeb85dfd833e00783abe2d.jar" />
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.3.0_8d11598c07bc0557c7f94aecd5f927ed7b0dfcea.jar" />
     </item>
     <item
-        jar="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_3fcd98b06cb32b08c173f13108615fbba85b36ec.jar" />
-    </item>
-    <item
-        jar="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.3.0_d95595396505d7223803fb970aff7afe78ec195d.jar" />
-    </item>
-    <item
-        jar="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jar="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.3.0_fb2654ad0374db5bb36c8432dd9f340feeaaafea.jar" />
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.3.0_45ff4bca073d5ab6f1caa914e995ae8b61a1a655.jar" />
     </item>
     <item
         jar="/Users/sagiller/Documents/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="/Users/sagiller/GoogleDrive/OneDrive/Codes/androidStudio/Renyugang/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_7560d1fd3a00ab31a9b1cc6ce77746192b7e5f3b.jar" />
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/support-annotations-23.3.0_7560d1fd3a00ab31a9b1cc6ce77746192b7e5f3b.jar" />
+    </item>
+    <item
+        jar="/Users/sagiller/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/library-2.4.0_cd9978bdb89404d7dda304ef24c89f59b3f88925.jar" />
+    </item>
+    <item
+        jar="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.3.0_b64d290e530a9d493380e2b75f178f20767a6c9b.jar" />
+    </item>
+    <item
+        jar="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/sagiller/Documents/Codes/Android/Android_Studio/renyugang/renyugang-study/app/build/intermediates/pre-dexed/release/internal_impl-23.3.0_260fb2d1a6fa8f04789da12964396317e67409b9.jar" />
     </item>
 
 </items>
