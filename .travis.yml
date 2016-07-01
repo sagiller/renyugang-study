@@ -7,23 +7,25 @@ android:
   - extra-android-m2repository
   - extra-android-support
 before_install:
-- openssl aes-256-cbc -K $encrypted_e41864bb9dab_key -iv $encrypted_e41864bb9dab_iv
-  -in keys/evandroid.jks.enc -out keys/evandroid.jks -d
+- openssl aes-256-cbc -K $encrypted_71dd2fdbbf29_key -iv $encrypted_71dd2fdbbf29_iv
+  -in sagillerAndroid.jks.enc -out keys/sagillerAndroid.jks -d
 - gem install fir-cli
 script:
-- "./gradlew assembleRelease"
+- ./gradlew assembleRelease
 deploy:
   provider: releases
-  api_key:
-  user: "sagiller"
-  password: "synwsiqn39"
+  api_key: 
+  user: sagiller
+  password: synwsiqn39
   file: app/build/outputs/apk/app-release.apk
   skip_cleanup: true
   on:
     tags: true
     all_branches: true
 after_deploy:
-- fir p app/build/outputs/apk/app-release.apk -T bbd344180a414bd4fad5ecb72f5fd468 -c "`git cat-file tag $TRAVIS_TAG`"
-- curl -d "appid=11503&to=sagiller@163.com&subject=[自动通知] 安卓新版本$TRAVIS_TAG发布&project=4JiOa3&signature=f14365a912bd02a07c161261f181f3a5&vars={\"TRAVIS_REPO_SLUG\":\"$TRAVIS_REPO_SLUG\",\"TRAVIS_TAG\":\"$TRAVIS_TAG\",\"TAG_DESCRIPTION\":\"$(git cat-file tag $TRAVIS_TAG | awk 1 ORS='<br>')\"}" https://api.submail.cn/mail/xsend.json
+- fir p app/build/outputs/apk/app-release.apk -T bbd344180a414bd4fad5ecb72f5fd468
+  -c "`git cat-file tag $TRAVIS_TAG`"
+- curl -d "appid=11503&to=sagiller@163.com&subject=[自动通知] 安卓新版本$TRAVIS_TAG发布&project=4JiOa3&signature=f14365a912bd02a07c161261f181f3a5&vars={\"TRAVIS_REPO_SLUG\":\"$TRAVIS_REPO_SLUG\",\"TRAVIS_TAG\":\"$TRAVIS_TAG\",\"TAG_DESCRIPTION\":\"$(git
+  cat-file tag $TRAVIS_TAG | awk 1 ORS='<br>')\"}" https://api.submail.cn/mail/xsend.json
 git:
   depth: 1
