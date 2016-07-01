@@ -16,14 +16,11 @@ script:
 - ./gradlew assembleRelease
 deploy:
   provider: releases
-  api_key: 
-  user: sagiller
-  password: synwsiqn39
+  api_key:
+    secure: f0JQ9eFFnYJB0YhyMVYHue0CvExD/86TBANILyFbAiM9Tcmxmgws0VVDplGhoaf9wSuPRN+tbDmB2a0dxxii+TyYGLAi1o7lMRSUcdFCiJ0yTLavE3GXmKxE6Qa8l8UtUtBABVMh29chY8FhZFyPIipeoxZpDu9LjrTSruGER0bOeSiOGYOBQgas9SsJfgKBQJXPtr7/NLibXuwIieJIVvkXj/gRtmYim7Yfs2wC/8yzn7IZIbR2lN1YQJgZzLh1VZIbDqR2Um/X81SzVDnio6wa8zLbOiDwIzfTx/3Pks+KuaSgFI+D4rbFtoXf1ORNYCRqOXciTSDxECODTKBNpD1GxR4qnI2OYDbkKoB6Nc5FVIFhJjAz4khG4hEdJrAl/rhlmwWa5Da3hWhpfekGvuXFn7NXGHVvG2mdPDs04Sdwf8m+B0eUsb4lO+APKVHgDOuHTODa4InZGdvGX6vsxXi1P59487zGKPbrCJwZVH54bEpZjOdAn8bQtKGWUxrDzSL7c7mKPkNEedoeSCdm9/h2uOhzRQUqSO8UyIykZvS8POMGFBk1fAPrX6R2HwiW3v8swBQSn9Q8k/hn/ryaTa1ohqBqQ8yRa7fdjIYmr85560Cs+dsktPXRtak6HVjeTsOx3Z/qM30jot8KW+5ctq1GyfLlkKs2nsCSjgQUOpc=
   file: app/build/outputs/apk/app-release.apk
-  skip_cleanup: true
   on:
-    tags: true
-    all_branches: true
+    repo: sagiller/renyugang-study
 after_deploy:
 - fir p app/build/outputs/apk/app-release.apk -T bbd344180a414bd4fad5ecb72f5fd468
   -c "`git cat-file tag $TRAVIS_TAG`"
@@ -31,3 +28,4 @@ after_deploy:
   cat-file tag $TRAVIS_TAG | awk 1 ORS='<br>')\"}" https://api.submail.cn/mail/xsend.json
 git:
   depth: 1
+
