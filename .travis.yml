@@ -18,13 +18,13 @@ deploy:
   provider: releases
   api_key:
     secure: f0JQ9eFFnYJB0YhyMVYHue0CvExD/86TBANILyFbAiM9Tcmxmgws0VVDplGhoaf9wSuPRN+tbDmB2a0dxxii+TyYGLAi1o7lMRSUcdFCiJ0yTLavE3GXmKxE6Qa8l8UtUtBABVMh29chY8FhZFyPIipeoxZpDu9LjrTSruGER0bOeSiOGYOBQgas9SsJfgKBQJXPtr7/NLibXuwIieJIVvkXj/gRtmYim7Yfs2wC/8yzn7IZIbR2lN1YQJgZzLh1VZIbDqR2Um/X81SzVDnio6wa8zLbOiDwIzfTx/3Pks+KuaSgFI+D4rbFtoXf1ORNYCRqOXciTSDxECODTKBNpD1GxR4qnI2OYDbkKoB6Nc5FVIFhJjAz4khG4hEdJrAl/rhlmwWa5Da3hWhpfekGvuXFn7NXGHVvG2mdPDs04Sdwf8m+B0eUsb4lO+APKVHgDOuHTODa4InZGdvGX6vsxXi1P59487zGKPbrCJwZVH54bEpZjOdAn8bQtKGWUxrDzSL7c7mKPkNEedoeSCdm9/h2uOhzRQUqSO8UyIykZvS8POMGFBk1fAPrX6R2HwiW3v8swBQSn9Q8k/hn/ryaTa1ohqBqQ8yRa7fdjIYmr85560Cs+dsktPXRtak6HVjeTsOx3Z/qM30jot8KW+5ctq1GyfLlkKs2nsCSjgQUOpc=
-  file: app/build/outputs/apk/app-release.apk
+  file: app/app-release.apk
   skip_cleanup: true
   on:
     repo: sagiller/renyugang-study
     tags: true
 after_deploy:
-- fir p app/build/outputs/apk/app-release.apk -T bbd344180a414bd4fad5ecb72f5fd468
+- fir p app/app-release.apk -T bbd344180a414bd4fad5ecb72f5fd468
   -c "`git cat-file tag $TRAVIS_TAG`"
 - curl -d "appid=11503&to=sagiller@163.com&subject=[自动通知] 安卓新版本$TRAVIS_TAG发布&project=4JiOa3&signature=f14365a912bd02a07c161261f181f3a5&vars={\"TRAVIS_REPO_SLUG\":\"$TRAVIS_REPO_SLUG\",\"TRAVIS_TAG\":\"$TRAVIS_TAG\",\"TAG_DESCRIPTION\":\"$(git
   cat-file tag $TRAVIS_TAG | awk 1 ORS='<br>')\"}" https://api.submail.cn/mail/xsend.json
